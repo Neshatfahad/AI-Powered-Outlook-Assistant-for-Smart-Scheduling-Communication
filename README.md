@@ -12,7 +12,6 @@ This project demonstrates a smart assistant built using Microsoft Copilot Studio
 
 Due to a known bug in front-end integration, the working demonstration is shown directly from Copilot Studio through a video.
 
-video link : https://vimeo.com/1080442839/03f4ebf22a?ts=0&share=copy
 
 📁 Repository Contents
 File	Description
@@ -40,7 +39,7 @@ Future-ready JavaScript placeholders to plug real-time data via Power Automate &
 
  Demo Video
  Watch the Copilot agent in action:
- Click Here to View Video (replace with your actual video link)
+ Click Here to View Video (https://vimeo.com/1080442839/03f4ebf22a?ts=0&share=copy)
 
  How to Run Locally
 Clone the repository:
