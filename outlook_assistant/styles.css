@@ -1,0 +1,44 @@
+/* Custom scrollbar for the chat window */
+#chatWindow::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chatWindow::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+#chatWindow::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+}
+
+#chatWindow::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+/* Message styling */
+.message {
+    max-width: 80%;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.user-message {
+    background-color: #3b82f6;
+    margin-left: auto;
+}
+
+.assistant-message {
+    background-color: #374151;
+    margin-right: auto;
+}
+
+/* Smooth transitions */
+.hover\:bg-gray-700:hover {
+    transition: background-color 0.2s ease;
+}
+
+.bg-blue-600:hover {
+    transition: background-color 0.2s ease;
+} 

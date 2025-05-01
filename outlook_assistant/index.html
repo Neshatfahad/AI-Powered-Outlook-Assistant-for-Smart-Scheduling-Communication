@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook Task Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white h-screen flex">
+    <!-- Left Sidebar -->
+    <div class="w-64 bg-gray-800 p-4 flex flex-col">
+        <h2 class="text-xl font-semibold mb-4">Chat History</h2>
+        <div class="space-y-2">
+            <div class="p-2 hover:bg-gray-700 rounded cursor-pointer">Meeting Rescheduling</div>
+            <div class="p-2 hover:bg-gray-700 rounded cursor-pointer">Calendar Review</div>
+            <div class="p-2 hover:bg-gray-700 rounded cursor-pointer">Task Management</div>
+            <div class="p-2 hover:bg-gray-700 rounded cursor-pointer">Email Organization</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+        <!-- Top Navigation -->
+        <div class="bg-gray-800 p-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold">Outlook Task Assistant</h1>
+            <div class="flex-1 max-w-xl mx-4">
+                <input type="text" 
+                       placeholder="Search chats..." 
+                       class="w-full bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="flex-1 p-4 overflow-y-auto" id="chatWindow">
+            <div class="space-y-4">
+                <!-- Messages will be added here dynamically -->
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="p-4 bg-gray-800">
+            <div class="flex space-x-4">
+                <input type="text" 
+                       id="userInput"
+                       placeholder="Type your message..." 
+                       class="flex-1 bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button onclick="sendMessage()" 
+                        class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
